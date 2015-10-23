@@ -1,0 +1,109 @@
+---
+title: Welcome to Charlotte's Open Budget
+---
+
+<body class="home-tpl">
+
+  <%= partial :nav %>
+  <%= partial :header %>
+
+  <div class="container-fluid">
+    <%= partial :left_nav %>
+
+    <section class="content fixed-fixed">
+      <section>
+
+        <h3>Welcome! So what is Civic Tech, anyway? </h3>
+        <p>It's using technology to empower citizens and improve government operations. By bridging the gap between technology and government, we can create a 21st century government for the people, by the people. However, to make that happen it is going to take all of us, yes, ALL of us.</p>
+
+        <p>We're a volunteer army comprised of citizens, designers, developers, technology geeks and citizen activists who use technology to help solve civic and social problems in our city. Yes! There is a way for <strong>everyone</strong> to contribute. </p>
+      </section>
+
+      <section>
+        <h3>Still not sure what Civic Tech is? Check out these resources...</h3>
+
+        <p>
+        </p>
+        <div class="container-fluid">
+          <div class="row-fluid">
+            <div class="span3">
+              <a href="https://www.youtube.com/watch?v=n4EhJ898r-k"><img src="http://i.imgur.com/HhhlD08.jpg" title="source: imgur.com" /></a>
+              <p>Jen Pahlka's TED Talk</p>
+            </div>
+            <div class="span3">
+              <a href="https://medium.com/civic-innovation/defining-civic-hacking-16844fc161cd"><img src="http://i.imgur.com/audTmS2.jpg" title="source: imgur.com" /></a>
+              <p>Jake Levitas' definition of Civic Hacking on Medium</p>
+            </div>
+            <div class="span3">
+              <a href="https://youtu.be/PinRhW8Psn4"><img src="http://i.imgur.com/G9cM8Ui.jpg" title="source: imgur.com" /></a>
+              <p>Code for America's Brigade Program Video</p>
+            </div>
+            <div class="span3">
+              <a href="https://youtu.be/kDFhzNfd-bg"><img src="http://i.imgur.com/K1DM0rz.jpg" title="source: imgur.com" /></a>
+              <p>Sunlight Foundation on Civic Hacking</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h4>Now that you know what Civic Tech is, check out our <a href="/get-involved">Get Involved Page</a>.</h4>
+      </section>
+      <!--
+      <section>
+      <h2>Latest Project Activity</h2>
+
+      <div class="row-fluid">
+
+      <em>No project updates have been posted on this site yet.</em>
+
+      </div> <!-- .row-fluid
+
+      <div class="row-fluid">
+      <a href="/project-updates" class="btn">Browse all project updates</a>
+      <a href="/project-buzz" class="btn">Browse all project buzz</a>
+      <a href="/blog" class="btn">Browse all blog posts</a>
+      </div> <!-- .row-fluid --
+      </section>
+      -->
+    </section>
+  </div>
+
+
+  <footer class="site">
+
+
+    Powered by <a href="http://laddr.io">Laddr</a> &mdash; a <a href="http://codeforphilly.org">Code for Philly</a> project.<br />
+    <a href="mailto:jbjers@codeforamerica.org">Contact Us</a>&nbsp;|&nbsp;<a href="/road-map">Strategic Plan</a>&nbsp;|&nbsp;<a href="/code-of-conduct">Code of Conduct</a>
+    <br>
+
+
+
+    <select onchange="document.cookie='locale='+this.value;location.reload();" style="width: auto;">
+
+      <option value=".emergence" ></option>
+
+      <option value="en_US.utf8" selected="SELECTED">English (United States)</option>
+
+      <option value="es_US.utf8" >Spanish (United States)</option>
+
+    </select>
+
+
+
+
+    <br>Cover photo by <a href="http://www.skimbacolifestyle.com" target="_blank">SKIMBACO Lifestyle</a>.
+
+    www.codeforcharlotte.org
+  </footer>
+
+
+<%= javascript_include_tag 'main' %>
+<%= javascript_include_tag 'sidebar' %>
+
+
+
+
+</body>
+
+</html>
