@@ -13,97 +13,316 @@ title: Welcome to Charlotte's Open Budget
     <section class="content fixed-fixed">
       <section>
 
-        <h3>Welcome! So what is Civic Tech, anyway? </h3>
-        <p>It's using technology to empower citizens and improve government operations. By bridging the gap between technology and government, we can create a 21st century government for the people, by the people. However, to make that happen it is going to take all of us, yes, ALL of us.</p>
+        <h3>Welcome to the Open Budget initiative!</h3>
 
-        <p>We're a volunteer army comprised of citizens, designers, developers, technology geeks and citizen activists who use technology to help solve civic and social problems in our city. Yes! There is a way for <strong>everyone</strong> to contribute. </p>
+        <p>At Code for Charlotte, we're a volunteer army comprised of citizens, designers, developers, technology geeks and citizen activists who use technology to help solve civic and social problems in our city. Yes! There is a way for <strong>everyone</strong> to contribute.</p>
+
+        <p>We've had the good fortune to work with the City of Charlotte's Finance department with
+          the <a href="http://clt.charlotte.opendata.arcgis.com/datasets?q=budget">FY2016 data</a> they've published on <a href="http://www.opencharlotte.net">the City's open data portal</a>.</p>
+
       </section>
 
       <section>
-        <h3>Still not sure what Civic Tech is? Check out these resources...</h3>
 
-        <p>
-        </p>
-        <div class="container-fluid">
-          <div class="row-fluid">
-            <div class="span3">
-              <a href="https://www.youtube.com/watch?v=n4EhJ898r-k"><img src="http://i.imgur.com/HhhlD08.jpg" title="source: imgur.com" /></a>
-              <p>Jen Pahlka's TED Talk</p>
+        <script id="data-home" type="application/json">
+        {
+            "key": "root",
+            "src": "",
+            "hash": "63a9f0ea",
+            "sub": [
+                {
+                    "key": "REVENUES TOTAL",
+                    "src": "",
+                    "hash": "07d40778",
+                    "sub": [],
+                    "descr": "",
+                    "url": "",
+                    "values": [
+                        {
+                            "val": 107410442.0,
+                            "year": 2008
+                        },
+                        {
+                            "val": 110482866.0,
+                            "year": 2009
+                        },
+                        {
+                            "val": 107555769.0,
+                            "year": 2010
+                        },
+                        {
+                            "val": 109114365.0,
+                            "year": 2011
+                        },
+                        {
+                            "val": 116396018.0,
+                            "year": 2012
+                        },
+                        {
+                            "val": 120317258.0,
+                            "year": 2013
+                        },
+                        {
+                            "val": 126860672.0,
+                            "year": 2014
+                        },
+                        {
+                            "val": 127501108.4,
+                            "year": 2015
+                        },
+                        {
+                            "val": 130939441.4,
+                            "year": 2016
+                        },
+                        {
+                            "val": 136340828.9,
+                            "year": 2017
+                        },
+                        {
+                            "val": 141765436.8,
+                            "year": 2018
+                        }
+                    ]
+                },
+                {
+                    "key": "APPROPRIATIONS TOTAL",
+                    "src": "",
+                    "hash": "026f893f",
+                    "sub": [],
+                    "descr": "",
+                    "url": "",
+                    "values": [
+                        {
+                            "val": 110964156.7,
+                            "year": 2008
+                        },
+                        {
+                            "val": 114204258.5,
+                            "year": 2009
+                        },
+                        {
+                            "val": 116357222.6,
+                            "year": 2010
+                        },
+                        {
+                            "val": 113661534.9,
+                            "year": 2011
+                        },
+                        {
+                            "val": 119144929.0,
+                            "year": 2012
+                        },
+                        {
+                            "val": 124539020.6,
+                            "year": 2013
+                        },
+                        {
+                            "val": 129384906.9,
+                            "year": 2014
+                        },
+                        {
+                            "val": 130002963.2,
+                            "year": 2015
+                        },
+                        {
+                            "val": 133235568.2,
+                            "year": 2016
+                        },
+                        {
+                            "val": 138455782.9,
+                            "year": 2017
+                        },
+                        {
+                            "val": 143670934.4,
+                            "year": 2018
+                        }
+                    ]
+                },
+                {
+                    "key": "FUNDS TOTAL",
+                    "src": "",
+                    "hash": "032862cb",
+                    "sub": [],
+                    "descr": "",
+                    "url": "",
+                    "values": [
+                        {
+                            "val": 11604604.0,
+                            "year": 2008
+                        },
+                        {
+                            "val": 11575967.0,
+                            "year": 2009
+                        },
+                        {
+                            "val": 8538240.0,
+                            "year": 2010
+                        },
+                        {
+                            "val": 5089098.0,
+                            "year": 2011
+                        },
+                        {
+                            "val": 8423147.0,
+                            "year": 2012
+                        },
+                        {
+                            "val": 18398926.0,
+                            "year": 2013
+                        },
+                        {
+                            "val": 20322173.0,
+                            "year": 2014
+                        },
+                        {
+                            "val": 22724015.0,
+                            "year": 2015
+                        },
+                        {
+                            "val": 22402694.0,
+                            "year": 2016
+                        },
+                        {
+                            "val": 19730613.0,
+                            "year": 2017
+                        },
+                        {
+                            "val": 13911532.0,
+                            "year": 2018
+                        }
+                    ]
+                }
+            ],
+            "descr": "",
+            "url": "",
+            "values": []
+        }
+        </script>
+        <script id="data-expenses" type="application/json">
+          <%= partial "expenses" %>
+        </script>
+
+        <script type="text/html" id="treemap-template">
+
+        <div id="information-container" class="span6" style="position:relative; padding-left:5px;">
+
+          <div id="information-cards" >
+
+          <!-- entry title -->
+            <div class="title-head" style="height:70px;">
+              <div style="display:inline-block;" class="text" > </div>
             </div>
-            <div class="span3">
-              <a href="https://medium.com/civic-innovation/defining-civic-hacking-16844fc161cd"><img src="http://i.imgur.com/audTmS2.jpg" title="source: imgur.com" /></a>
-              <p>Jake Levitas' definition of Civic Hacking on Medium</p>
+
+            <div id="info-wrap" >
+              <div id="slider-wrap">
+
+                <!-- layer chart legend -->
+                <div id="legend-wrap">
+                  <div class="arrow" style="right:20px;">
+                    <i class="icon-chevron-left"></i>
+                  </div>
+                  <div id="legend-container">
+                    <div id="legend" class="separator">
+                      <table><tbody></tbody></table>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- info cards -->
+                <div id="cards" >
+                  <div class="arrow">
+                    <i class="icon-chevron-right"></i>
+                  </div>
+                </div>
+
+              </div>
             </div>
-            <div class="span3">
-              <a href="https://youtu.be/PinRhW8Psn4"><img src="http://i.imgur.com/G9cM8Ui.jpg" title="source: imgur.com" /></a>
-              <p>Code for America's Brigade Program Video</p>
-            </div>
-            <div class="span3">
-              <a href="https://youtu.be/kDFhzNfd-bg"><img src="http://i.imgur.com/K1DM0rz.jpg" title="source: imgur.com" /></a>
-              <p>Sunlight Foundation on Civic Hacking</p>
+
+          </div>
+
+          <!-- chart -->
+          <div id="chart-wrap" class="row-fluid" >
+            <div id='chart' class="chart"> </div>
+          </div>
+        </div>
+
+        <!-- treemap -->
+        <div id="navigation-container" class="span6" >
+          <div class="title-head" style="height:70px;">
+            <button id="zoombutton" class="btn pull-right">
+              <i class="icon-zoom-out"></i> Go back
+            </button>
+          </div>
+          <div id="navigation" >
+            <div id="ie-popover">
+              <div class="popover-title"></div>
+              <div class="text"></div>
+              <div class="arrow"> </div>
             </div>
           </div>
         </div>
+        </script>
+
+        <!-- card template -->
+        <script type="text/html" id="card-template">
+          <div class="card {{class}} ">
+            <div class="card-img"> </div>
+            <div class="card-text">
+              <div class="card-value"></div>
+              <div class="card-desc"></div>
+            </div>
+          </div>
+        </script>
+
+        <!-- table template -->
+        <script type="text/html" id="table-template">
+          <div id="table-container" >
+            <div class="tablerow" id="table-header" > <div class="bullet"> </div>
+          </div>
+        </script>
+
+        <!-- table header template -->
+        <script type="text/html" id="table-header-template">
+          <div class="tablerow" id="table-header" data-level=0>
+            <div class="bullet"> </div>
+            {{#.}}
+              <div class="{{cellClass}} head"> {{title}} </div>
+            {{/.}}
+          </div>
+        </script>
+
+        <!-- table row template -->
+        <script type="text/html" id="row-template">
+          <div class="tablerow">
+            <div class="bullet"> <img class="expand-icon" src="/img/listBullet.png" /> </div>
+          </div>
+        </script>
+
+        <!-- year dropdown template -->
+        <script type="text/html" id="dropdown-template">
+          <li role="presentation">
+            <a role="menuitem" tabindex="-1" href="#">{{.}}</a>
+          </li>
+        </script>
+
       </section>
-
-      <section>
-        <h4>Now that you know what Civic Tech is, check out our <a href="/get-involved">Get Involved Page</a>.</h4>
-      </section>
-      <!--
-      <section>
-      <h2>Latest Project Activity</h2>
-
-      <div class="row-fluid">
-
-      <em>No project updates have been posted on this site yet.</em>
-
-      </div> <!-- .row-fluid
-
-      <div class="row-fluid">
-      <a href="/project-updates" class="btn">Browse all project updates</a>
-      <a href="/project-buzz" class="btn">Browse all project buzz</a>
-      <a href="/blog" class="btn">Browse all blog posts</a>
-      </div> <!-- .row-fluid --
-      </section>
-      -->
-    </section>
-  </div>
+    </div>
 
 
-  <footer class="site">
+    <footer class="site">
+
+      Charlotte Visual Budget is licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache 2</a> and was created using open source code and data.
 
 
-    Powered by <a href="http://laddr.io">Laddr</a> &mdash; a <a href="http://codeforphilly.org">Code for Philly</a> project.<br />
-    <a href="mailto:jbjers@codeforamerica.org">Contact Us</a>&nbsp;|&nbsp;<a href="/road-map">Strategic Plan</a>&nbsp;|&nbsp;<a href="/code-of-conduct">Code of Conduct</a>
-    <br>
+      <a href="mailto:jbjers@codeforamerica.org">Contact Us</a>&nbsp;|&nbsp;<a href="http://www.codeforcharlotte.org/road-map">Strategic Plan</a>&nbsp;|&nbsp;<a href="/code-of-conduct">Code of Conduct</a>
+      <br>
 
+      <br>Cover photo by <a href="http://www.skimbacolifestyle.com" target="_blank">SKIMBACO Lifestyle</a>.
+    </footer>
 
+    <%#= javascript_include_tag 'main' %>
+    <%#= javascript_include_tag 'sidebar' %>
 
-    <select onchange="document.cookie='locale='+this.value;location.reload();" style="width: auto;">
+  </body>
 
-      <option value=".emergence" ></option>
-
-      <option value="en_US.utf8" selected="SELECTED">English (United States)</option>
-
-      <option value="es_US.utf8" >Spanish (United States)</option>
-
-    </select>
-
-
-
-
-    <br>Cover photo by <a href="http://www.skimbacolifestyle.com" target="_blank">SKIMBACO Lifestyle</a>.
-
-    www.codeforcharlotte.org
-  </footer>
-
-
-<%= javascript_include_tag 'main' %>
-<%= javascript_include_tag 'sidebar' %>
-
-
-
-
-</body>
-
-</html>
+  </html>

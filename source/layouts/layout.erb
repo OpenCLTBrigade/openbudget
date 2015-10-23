@@ -1,31 +1,56 @@
 <!doctype html>
 <html class="no-js">
-  <head>
+<head>
   <meta charset="utf-8">
 
-    <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "Code for Charlotte" %></title>
+  <!-- Use title if it's in the page YAML frontmatter -->
+  <title><%= current_page.data.title || "Code for Charlotte" %></title>
 
-                    
+
   <meta name="description" content="A Code for America Brigade">
-        
 
-                    
+
+
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
 
-                    
-        
+
+
+
 
   <%= stylesheet_link_tag "bootstrap" %>
 
-    <!-- Always force latest IE rendering engine or request Chrome Frame -->
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <link href='http://fonts.googleapis.com/css?family=Strait' rel='stylesheet' type='text/css'>
 
-  </head>
+  <!-- Non-minified js -->
 
-  <body class="<%= page_classes %>">
-    <%= yield %>
-  </body>
+  <%= javascript_include_tag 'lib/mustache/mustache.js' %>
+
+  <%= javascript_include_tag 'lib/mustache/mustache.js' %>
+  <%= javascript_include_tag 'lib/d3/d3.v3.min.js' %>
+  <%= javascript_include_tag 'lib/jquery/jquery-1.9.1.min.js' %>
+  <%= javascript_include_tag 'lib/bootstrap/bootstrap.min.js' %>
+  <%= javascript_include_tag 'lib/detectmobilebrowser/detectmobilebrowser.js' %>
+  <%= javascript_include_tag 'lib/cookie/jquery.cookie.js' %>
+  <%= javascript_include_tag 'treemap.js' %>
+  <%= javascript_include_tag 'chart.js' %>
+  <%= javascript_include_tag 'cards.js' %>
+  <%= javascript_include_tag 'table.js' %>
+  <%= javascript_include_tag 'navbar.js' %>
+  <%= javascript_include_tag 'statistics.js' %>
+  <%= javascript_include_tag 'home.js' %>
+  <%= javascript_include_tag 'avb.js' %>
+
+  <!-- Always force latest IE rendering engine or request Chrome Frame -->
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <script>
+    $(document).ready(initialize);
+    </script>
+
+</head>
+
+<body class="<%= page_classes %>">
+  <%= yield %>
+</body>
 </html>
