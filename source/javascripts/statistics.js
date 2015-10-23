@@ -62,20 +62,6 @@ stats = {
             avb.table.renderImpact(d, cell)
         }
     },
-    individual: {
-        title: "Individual",
-        class: "span6 individual",
-        value: function (d) {
-            var percentage = d.values[yearIndex].val / avb.root.values[yearIndex].val;
-
-            return '$' + (avb.userContribution * percentage).toFixed(2);
-        },
-        side: 'your yearly tax contribution.',
-        cellClass: "value sum",
-        cellFunction: function (d, cell) {
-            avb.table.renderImpact(d, cell)
-        }
-    },
     growth: {
         title: "Growth",
         class: "span6 top",

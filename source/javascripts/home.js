@@ -195,21 +195,6 @@ avb.home = function () {
 
         $('.section').removeAttr('onclick');
 
-        // taxes input box initialization
-        $('#tax-input').val(getContribution());
-        // start our when user clicks on start
-        $('#tax-input-start').click(function () {
-            setContribution();
-            tourClick.call(this, individualTour);
-        });
-        // start our when user clicks on enter
-        $('#tax-input').keypress(function (e) {
-            if (e.which == 13) {
-                setContribution();
-                tourClick.call(this, individualTour);
-            }
-        });
-
         /*
         *   Tutorial links initialization
         */
@@ -350,16 +335,9 @@ avb.home = function () {
         // fade in homepage content
         home.content.delay(300).fadeIn();
 
-        // show section bar animation
-        var data = JSON.parse($('#data-home').html());
-        setTimeout(function () {
-            home.data = data;
-            showGraph(1000);
-        }, 1500);
-
         // start application
         initializeVisualizations({
-            "section": "funds"
+            "section": "expenses"
         });
 
         // do not highlight any sections while homepage is open

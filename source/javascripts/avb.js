@@ -127,9 +127,6 @@ function initializeVisualizations(params) {
         }
     });
 
-    // get user contribution if set
-    avb.userContribution = avb.home.getContribution();
-
     // set viewing mode
     setMode(params.mode);
 
