@@ -48,9 +48,7 @@ html{
 
 body {
 	color: $black;
-	font-family: 'Strait', sans-serif;
 	@include reset-box-model;
-	background-image: url(/img/bg_avb.png);
  	height: 100%;
 }
 

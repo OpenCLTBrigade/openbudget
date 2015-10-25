@@ -13,7 +13,6 @@
 }
 
 #avb-home{
-  background-image: url(/img/bg_avb.png);
   z-index: 1010;
   border-bottom: 2px solid $fucsia;
   display: none;
@@ -27,29 +26,8 @@
   display: none;
 }
 
-/*
-*   Homepage hero unit
-*/
-.hero-unit{
-  padding: 0px;
-  margin-top: 90px;
-  line-height: $text-lineheight-big;
-
-  #welcome-hero{
-    width: 70%; 
-    display: inline-block;
-    vertical-align: top;
-  }
-
-  h1{
-    font-size: $text-title;
-    margin-bottom: 10px;
-  }
-}
-
 #tax-input{
   width:100px;
-  font-family: 'Strait', sans-serif;
 }
 
 #home-col1,
@@ -83,17 +61,17 @@
     bottom: 0px;
 
     .node-bar {
-      display:inline-block; 
+      display:inline-block;
       width:85px;
       overflow: hidden;
       border-radius: 5px;
 
       .node-value{
         display: none;
-        position:absolute; 
+        position:absolute;
         bottom:10px;
         color: white;
-        right:0; 
+        right:0;
         left:0;
       }
     }
@@ -109,7 +87,7 @@
 
 /*
 * Tablet Portait + Landscape
-*/ 
+*/
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   h1{
     font-size: 2.5em !important;

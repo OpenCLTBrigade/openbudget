@@ -28,7 +28,7 @@
 * Defaults to > 1200px width
 */
 .container {
-  width: 1200px;
+  width: 100%;
 }
 
 // chart
@@ -50,7 +50,7 @@
 
 /*
 * Tablet Portait + Landscape
-*/ 
+*/
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 
   .container {
@@ -67,7 +67,7 @@
 
   #navigation-container,
   #information-container {
-    height: 550px;  
+    height: 550px;
   }
 
 }
