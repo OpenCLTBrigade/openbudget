@@ -31,7 +31,6 @@ License:
 */
 
 
-
 var avb = avb || {};
 
 avb.cards = function(){

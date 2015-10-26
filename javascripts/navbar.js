@@ -27,7 +27,6 @@ License:
     limitations under the License.
 */
 
-
 var avb = avb || {};
 
 avb.navbar = function(){

@@ -5,7 +5,6 @@
  * Copyright 2013 Klaus Hartl
  * Released under the MIT license
  */
-
 (function (factory) {
 	if (typeof define === 'function' && define.amd) {
 		// AMD. Register as anonymous module.

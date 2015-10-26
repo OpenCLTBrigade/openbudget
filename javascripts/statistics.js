@@ -27,7 +27,6 @@ License:
     limitations under the License.
 */
 
-
 stats = {
     amount: {
         title: "Amount",

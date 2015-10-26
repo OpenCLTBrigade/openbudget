@@ -21,12 +21,12 @@
 /*
 *	Page
 */
-/* line 45, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_base.scss */
+/* line 44, ../../stylesheets/partials/_base.scss */
 html {
   min-height: 100%;
   position: relative; }
 
-/* line 50, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_base.scss */
+/* line 49, ../../stylesheets/partials/_base.scss */
 body {
   color: #333333;
   margin: 0;
@@ -34,7 +34,7 @@ body {
   border: 0;
   height: 100%; }
 
-/* line 57, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_base.scss */
+/* line 56, ../../stylesheets/partials/_base.scss */
 p {
   vertical-align: top; }
 
@@ -42,27 +42,27 @@ p {
 * Tablet Portait + Landscape
 */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 65, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_base.scss */
+  /* line 64, ../../stylesheets/partials/_base.scss */
   body, html {
     font-size: 12px; } }
 @page {
   size: landscape; }
-/* line 16, /Users/bigfleet/src/openbudget/source/stylesheets/print.scss */
+/* line 15, ../../stylesheets/print.scss */
 .popover {
   background: white !important; }
 
-/* line 21, /Users/bigfleet/src/openbudget/source/stylesheets/print.scss */
+/* line 20, ../../stylesheets/print.scss */
 #zoombutton {
   display: none; }
 
-/* line 25, /Users/bigfleet/src/openbudget/source/stylesheets/print.scss */
+/* line 24, ../../stylesheets/print.scss */
 .overflows {
   display: none; }
 
-/* line 30, /Users/bigfleet/src/openbudget/source/stylesheets/print.scss */
+/* line 29, ../../stylesheets/print.scss */
 a:link:after, a:visited:after {
   content: ""; }
 
-/* line 34, /Users/bigfleet/src/openbudget/source/stylesheets/print.scss */
+/* line 33, ../../stylesheets/print.scss */
 #avb-body {
   margin-bottom: 20px; }
