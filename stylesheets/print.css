@@ -1,0 +1,68 @@
+/*
+	File Overview:	Print Styles SCSS
+	Author:			Ivan DiLernia
+	Description:	Includes all styles for primary styles for the site.
+*/
+/*
+	File Overview:	Base scss definitions
+	Authors:		Michael Bester,
+					Ivan DiLernia, Roger Zhu
+*/
+/* Compass global imports */
+/* Configure for target Browser Set
+   Chrome, IE8+
+============================================*/
+/*
+*	Fonts
+*/
+/*
+*	Colors
+*/
+/*
+*	Page
+*/
+/* line 45, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_base.scss */
+html {
+  min-height: 100%;
+  position: relative; }
+
+/* line 50, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_base.scss */
+body {
+  color: #333333;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height: 100%; }
+
+/* line 57, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_base.scss */
+p {
+  vertical-align: top; }
+
+/*
+* Tablet Portait + Landscape
+*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* line 65, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_base.scss */
+  body, html {
+    font-size: 12px; } }
+@page {
+  size: landscape; }
+/* line 16, /Users/bigfleet/src/openbudget/source/stylesheets/print.scss */
+.popover {
+  background: white !important; }
+
+/* line 21, /Users/bigfleet/src/openbudget/source/stylesheets/print.scss */
+#zoombutton {
+  display: none; }
+
+/* line 25, /Users/bigfleet/src/openbudget/source/stylesheets/print.scss */
+.overflows {
+  display: none; }
+
+/* line 30, /Users/bigfleet/src/openbudget/source/stylesheets/print.scss */
+a:link:after, a:visited:after {
+  content: ""; }
+
+/* line 34, /Users/bigfleet/src/openbudget/source/stylesheets/print.scss */
+#avb-body {
+  margin-bottom: 20px; }

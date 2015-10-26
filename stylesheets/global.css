@@ -1,0 +1,828 @@
+/*
+	File Overview:	Global SCSS
+	Author:			Michael Bester
+	Description:	Includes all styles for primary styles for the site.
+*/
+/*
+	File Overview:	Base scss definitions
+	Authors:		Michael Bester,
+					Ivan DiLernia, Roger Zhu
+*/
+/* Compass global imports */
+/* Configure for target Browser Set
+   Chrome, IE8+
+============================================*/
+/*
+*	Fonts
+*/
+/*
+*	Colors
+*/
+/*
+*	Page
+*/
+/* line 45, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_base.scss */
+html {
+  min-height: 100%;
+  position: relative; }
+
+/* line 50, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_base.scss */
+body {
+  color: #333333;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height: 100%; }
+
+/* line 57, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_base.scss */
+p {
+  vertical-align: top; }
+
+/*
+* Tablet Portait + Landscape
+*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* line 65, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_base.scss */
+  body, html {
+    font-size: 12px; } }
+/*
+  File Overview:  Section styles.
+  Authors:
+    Ivan DiLernia <ivan@goinvo.com>
+    Roger Zhu <roger@goinvo.com>
+*/
+/*
+* Main container
+*/
+/* line 11, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_avb.scss */
+#avb-wrap {
+  position: relative;
+  margin-bottom: 10px;
+  padding: 15px;
+  padding-top: 10px;
+  text-align: left;
+  background-color: #f9f9f9;
+  -moz-box-shadow: 0px 0px 10px #ccc;
+  -webkit-box-shadow: 0px 0px 10px #ccc;
+  box-shadow: 0px 0px 10px #ccc; }
+
+/*
+* Component dimensions
+* (chart, treemap, tables...)
+*/
+/*
+* Defaults to > 1200px width
+*/
+/* line 30, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_avb.scss */
+.container {
+  width: 100%; }
+
+/* line 35, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_avb.scss */
+#chart-wrap {
+  height: 250px; }
+
+/* line 40, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_avb.scss */
+#info-wrap {
+  height: 250px; }
+
+/* line 45, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_avb.scss */
+#navigation-container,
+#information-container {
+  height: 600px; }
+
+/*
+* Tablet Portait + Landscape
+*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* line 56, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_avb.scss */
+  .container {
+    width: 980px; }
+
+  /* line 60, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_avb.scss */
+  #chart-wrap {
+    height: 220px; }
+
+  /* line 64, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_avb.scss */
+  #info-wrap {
+    height: 250px; }
+
+  /* line 68, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_avb.scss */
+  #navigation-container,
+  #information-container {
+    height: 550px; } }
+/* line 83, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_avb.scss */
+.introjs-tooltip {
+  font-size: 18px; }
+
+/*
+* Separator class
+*/
+/* line 90, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_avb.scss */
+.separator:after {
+  display: block;
+  border: none;
+  height: 1px;
+  background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#ccc), to(#fff));
+  background-image: -webkit-linear-gradient(left, transparent, rgba(0, 0, 0, 0.2), transparent);
+  background-image: -moz-linear-gradient(left, transparent, rgba(0, 0, 0, 0.2), transparent);
+  background-image: -ms-linear-gradient(left, transparent, rgba(0, 0, 0, 0.2), transparent);
+  background-image: -o-linear-gradient(left, transparent, rgba(0, 0, 0, 0.2), transparent); }
+
+/*
+* Links
+*/
+/* line 104, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_avb.scss */
+.link {
+  text-decoration: underline;
+  cursor: pointer;
+  color: black; }
+  /* line 109, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_avb.scss */
+  .link:hover {
+    color: steelblue; }
+
+/*
+* Opendata section css
+*/
+/* line 118, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_avb.scss */
+.dataDownload {
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 10px; }
+  /* line 123, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_avb.scss */
+  .dataDownload .icon-download {
+    vertical-align: baseline; }
+
+/*
+* Glossary section css
+*/
+/* line 131, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_avb.scss */
+#avb-glossary {
+  padding: 10px; }
+  /* line 135, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_avb.scss */
+  #avb-glossary .definition {
+    margin-bottom: 20px; }
+    /* line 139, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_avb.scss */
+    #avb-glossary .definition .title,
+    #avb-glossary .definition .description {
+      font-size: 18px; }
+    /* line 144, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_avb.scss */
+    #avb-glossary .definition .title {
+      font-weight: bold;
+      color: #d63366; }
+    /* line 149, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_avb.scss */
+    #avb-glossary .definition .description {
+      margin-left: 10px; }
+
+/* line 156, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_avb.scss */
+#footer {
+  text-align: center;
+  margin-bottom: 5px; }
+
+/*
+  File Overview:  Homepage styles.
+  Authors:
+    Ivan DiLernia <ivan@goinvo.com>
+    Roger Zhu <roger@goinvo.com>
+*/
+/* line 8, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_home.scss */
+#avb-home, #overlay {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0; }
+
+/* line 15, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_home.scss */
+#avb-home {
+  z-index: 1010;
+  border-bottom: 2px solid #d63366;
+  display: none; }
+
+/* line 21, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_home.scss */
+#overlay {
+  height: 100%;
+  z-index: 1000;
+  background-color: #000;
+  opacity: 0.5;
+  display: none; }
+
+/* line 29, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_home.scss */
+#tax-input {
+  width: 100px; }
+
+/* line 33, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_home.scss */
+#home-col1,
+#home-col2 {
+  width: 46%;
+  vertical-align: top; }
+
+/*
+* Bars CSS
+*/
+/* line 43, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_home.scss */
+#home-col3 {
+  display: inline-block;
+  vertical-align: bottom;
+  height: 200px; }
+  /* line 48, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_home.scss */
+  #home-col3 #home-map-svg {
+    margin: 0 auto;
+    width: 29%;
+    height: 100%; }
+  /* line 54, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_home.scss */
+  #home-col3 .node {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    /* Firefox */
+    text-align: center;
+    position: absolute;
+    cursor: pointer;
+    bottom: 0px; }
+    /* line 63, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_home.scss */
+    #home-col3 .node .node-bar {
+      display: inline-block;
+      width: 85px;
+      overflow: hidden;
+      border-radius: 5px; }
+      /* line 69, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_home.scss */
+      #home-col3 .node .node-bar .node-value {
+        display: none;
+        position: absolute;
+        bottom: 10px;
+        color: white;
+        right: 0;
+        left: 0; }
+    /* line 79, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_home.scss */
+    #home-col3 .node:hover {
+      opacity: 0.8; }
+
+/*
+* Tablet Portait + Landscape
+*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* line 92, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_home.scss */
+  h1 {
+    font-size: 2.5em !important; }
+
+  /* line 96, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_home.scss */
+  #home-col1 {
+    width: 50%; }
+
+  /* line 100, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_home.scss */
+  #home-col2 {
+    width: 42%; }
+
+  /* line 105, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_home.scss */
+  #tax-input {
+    width: 80px; } }
+/*
+  File Overview: Chart styles.
+  Authors:
+    Ivan DiLernia <ivan@goinvo.com>
+    Roger Zhu <roger@goinvo.com>
+*/
+/*
+* Container
+*/
+/* line 11, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_chart.scss */
+#chart-wrap {
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px; }
+  /* line 18, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_chart.scss */
+  #chart-wrap #chart {
+    height: 100%; }
+
+/*
+* Lines
+*/
+/* line 27, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_chart.scss */
+.line {
+  fill: none;
+  stroke-width: 3;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  opacity: 0.6; }
+  /* line 34, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_chart.scss */
+  .line.projection {
+    stroke-dasharray: 5, 5;
+    stroke-linejoin: round;
+    stroke-linecap: round; }
+
+/*
+* Areas
+*/
+/* line 44, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_chart.scss */
+.area {
+  opacity: 0.2; }
+  /* line 47, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_chart.scss */
+  .area.projection {
+    opacity: 0.1; }
+
+/* line 52, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_chart.scss */
+.overflows {
+  fill: #f9f9f9; }
+
+/*
+* Axis
+*/
+/* line 60, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_chart.scss */
+.axis path, .axis line {
+  stroke: #7a7a7a;
+  stroke-width: 1;
+  stroke-linejoin: round;
+  stroke-linecap: round; }
+/* line 67, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_chart.scss */
+.axis text {
+  font-size: 12px; }
+/* line 71, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_chart.scss */
+.axis .odd {
+  fill: none; }
+/* line 75, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_chart.scss */
+.axis .thisYear {
+  fill: black;
+  font-weight: bold; }
+/* line 80, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_chart.scss */
+.axis text {
+  cursor: default; }
+
+/*
+* Layers
+*/
+/* line 89, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_chart.scss */
+.multiarea {
+  fill-opacity: 0.65; }
+
+/* line 92, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_chart.scss */
+.multiline {
+  fill: none;
+  stroke-width: 2px;
+  opacity: 1; }
+
+/* line 97, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_chart.scss */
+.multiaxis path {
+  stroke-width: 0;
+  fill: none; }
+
+/* line 102, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_chart.scss */
+.multigrid .tick {
+  stroke: lightgray;
+  opacity: 0; }
+/* line 106, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_chart.scss */
+.multigrid path {
+  stroke-width: 1; }
+
+/* line 111, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_chart.scss */
+.layerLine, .sideShadow {
+  box-shadow: -3px 0px 8px black;
+  margin-left: 10px; }
+
+/*
+  File Overview: Cards and legend styles.
+  Authors:
+    Ivan DiLernia <ivan@goinvo.com>
+    Roger Zhu <roger@goinvo.com>
+*/
+/*
+* Section title and description
+*/
+/* line 12, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_cards.scss */
+.title-head {
+  font-size: 18px;
+  white-space: nowrap;
+  font-size: 28px; }
+  /* line 16, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_cards.scss */
+  .title-head div {
+    line-height: 70px; }
+  /* line 20, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_cards.scss */
+  .title-head .description {
+    display: inline-block;
+    font-size: 18px;
+    width: 400px;
+    margin-left: 20px;
+    line-height: normal;
+    white-space: normal; }
+
+/*
+* Cards & legend container
+*/
+/* line 34, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_cards.scss */
+#info-wrap {
+  overflow: hidden;
+  height: 100%;
+  overflow-x: hidden;
+  /*
+  *	Cards/legend switcher
+  */ }
+  /* line 38, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_cards.scss */
+  #info-wrap div {
+    cursor: pointer; }
+  /* line 46, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_cards.scss */
+  #info-wrap .arrow {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 20px;
+    opacity: 0.1;
+    background-color: #f1f1f1; }
+    /* line 55, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_cards.scss */
+    #info-wrap .arrow i {
+      position: absolute;
+      top: 50%;
+      left: 3px; }
+    /* line 61, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_cards.scss */
+    #info-wrap .arrow:hover {
+      opacity: 0.6; }
+
+/*
+*	Legend
+*/
+/* line 71, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_cards.scss */
+#legend-wrap {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: -100%;
+  font-size: 18px;
+  line-height: 28px; }
+  /* line 79, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_cards.scss */
+  #legend-wrap #legend-container {
+    height: 100%;
+    overflow-y: auto; }
+  /* line 84, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_cards.scss */
+  #legend-wrap .legend-label {
+    width: 16px;
+    height: 16px;
+    border-radius: 8px; }
+  /* line 90, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_cards.scss */
+  #legend-wrap tr :first-child {
+    margin-right: 5px; }
+
+/*
+*	Cards container
+*/
+/* line 98, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_cards.scss */
+#slider-wrap {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  cursor: pointer; }
+
+/*
+*	Cards
+*/
+/* line 110, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_cards.scss */
+#cards {
+  position: relative;
+  width: 100%;
+  margin-top: 15px;
+  overflow: auto; }
+  /* line 116, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_cards.scss */
+  #cards .card {
+    padding: 10px 0px 10px 0px; }
+    /* line 119, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_cards.scss */
+    #cards .card.top {
+      padding-top: 5px; }
+  /* line 124, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_cards.scss */
+  #cards .card-desc {
+    font-size: 18px;
+    line-height: 28px;
+    color: gray; }
+  /* line 130, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_cards.scss */
+  #cards .card-value {
+    font-size: 28px;
+    line-height: 28px;
+    font-family: 'Georgia'; }
+  /* line 136, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_cards.scss */
+  #cards .card-source {
+    padding-left: 0;
+    padding-right: 0; }
+    /* line 140, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_cards.scss */
+    #cards .card-source .card-value {
+      text-decoration: underline;
+      font-size: 18px;
+      cursor: pointer;
+      display: block;
+      color: #5776a2; }
+    /* line 149, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_cards.scss */
+    #cards .card-source .card-value:hover {
+      color: #98abc7; }
+
+/*
+* Tablet Portait + Landscape
+*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* line 160, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_cards.scss */
+  #cards {
+    margin-top: 0px; } }
+/*
+  File Overview: Navbar styles.
+  Authors:
+    Ivan DiLernia <ivan@goinvo.com>
+    Roger Zhu <roger@goinvo.com>
+*/
+/* line 8, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_navbar.scss */
+#avb-menubar {
+  font-size: 18px;
+  padding: 15px 5px 15px 5px;
+  z-index: 1050;
+  padding-top: 2px;
+  border-top: 2px solid #d63366;
+  max-height: 60px;
+  /*
+  * Links
+  */
+  /*
+  * Search box
+  */ }
+  /* line 17, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_navbar.scss */
+  #avb-menubar.purple-border {
+    border-top: 2px solid #d63366; }
+  /* line 21, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_navbar.scss */
+  #avb-menubar .container {
+    margin-top: 5px; }
+  /* line 25, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_navbar.scss */
+  #avb-menubar .navbar-margin {
+    margin-left: 90px; }
+  /* line 29, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_navbar.scss */
+  #avb-menubar .nav {
+    margin-bottom: 0px !important; }
+  /* line 33, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_navbar.scss */
+  #avb-menubar .entry {
+    display: inline-block;
+    position: relative; }
+  /* line 42, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_navbar.scss */
+  #avb-menubar .homebutton,
+  #avb-menubar .menubutton {
+    cursor: pointer;
+    position: relative;
+    z-index: 1050;
+    color: #333333;
+    display: inline-block; }
+  /* line 53, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_navbar.scss */
+  #avb-menubar .menubutton.selected a {
+    color: #db4e86; }
+  /* line 57, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_navbar.scss */
+  #avb-menubar .menubutton .caret {
+    border-top-color: #333333;
+    border-bottom-color: #333333; }
+  /* line 62, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_navbar.scss */
+  #avb-menubar .menubutton a {
+    color: #333333; }
+  /* line 66, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_navbar.scss */
+  #avb-menubar .menubutton i {
+    vertical-align: baseline; }
+  /* line 70, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_navbar.scss */
+  #avb-menubar .menubutton.margin {
+    margin-right: 20px; }
+  /* line 78, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_navbar.scss */
+  #avb-menubar .search {
+    border-radius: 5px;
+    border: 1px solid #c2c2c2;
+    vertical-align: top; }
+
+/*
+* Year selector
+*/
+/* line 89, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_navbar.scss */
+#yeardrop-container {
+  vertical-align: top;
+  min-width: 100px; }
+  /* line 97, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_navbar.scss */
+  #yeardrop-container a {
+    padding-left: 20px; }
+    /* line 100, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_navbar.scss */
+    #yeardrop-container a b {
+      float: right;
+      margin-right: 5px;
+      vertical-align: baseline; }
+  /* line 106, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_navbar.scss */
+  #yeardrop-container .dropdown-menu {
+    min-width: 100px;
+    border-radius: 0px; }
+
+/*
+* Tablet Portait + Landscape
+*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* line 116, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_navbar.scss */
+  #avb-menubar {
+    padding: 15px 5px 15px 5px; }
+    /* line 120, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_navbar.scss */
+    #avb-menubar .navbar-margin {
+      margin-left: 30px; }
+    /* line 124, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_navbar.scss */
+    #avb-menubar .modename {
+      display: none; } }
+/*
+  File Overview:  Table styles.
+  Authors:
+    Ivan DiLernia <ivan@goinvo.com>
+    Roger Zhu <roger@goinvo.com>
+*/
+/* line 9, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_table.scss */
+.group {
+  display: none; }
+
+/* line 16, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_table.scss */
+#table-header:hover {
+  background-color: transparent;
+  cursor: default; }
+/* line 21, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_table.scss */
+#table-header div {
+  margin-left: -4px; }
+
+/*
+*	Row styles
+*/
+/* line 30, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_table.scss */
+.tablerow {
+  height: 40px;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #aaa;
+  font-size: 18px;
+  line-height: 40px; }
+  /* line 40, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_table.scss */
+  .tablerow.atomic .expand-icon {
+    display: none; }
+  /* line 44, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_table.scss */
+  .tablerow:last-child {
+    border-bottom: 0; }
+  /* line 48, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_table.scss */
+  .tablerow .value {
+    text-align: center;
+    width: 150px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: inline-block; }
+    /* line 56, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_table.scss */
+    .tablerow .value.long {
+      width: 300px; }
+    /* line 60, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_table.scss */
+    .tablerow .value.textleft {
+      text-align: left; }
+    /* line 64, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_table.scss */
+    .tablerow .value.numeric {
+      font-family: "Georgia"; }
+    /* line 68, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_table.scss */
+    .tablerow .value.head {
+      font-weight: 500; }
+    /* line 72, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_table.scss */
+    .tablerow .value.maplink {
+      width: 40px;
+      opacity: 0.1; }
+  /* line 78, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_table.scss */
+  .tablerow:hover {
+    background-color: #ebebeb; }
+    /* line 81, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_table.scss */
+    .tablerow:hover .value.maplink {
+      opacity: 0.8; }
+  /* line 86, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_table.scss */
+  .tablerow .bullet, .tablerow .sparkline {
+    vertical-align: bottom; }
+  /* line 90, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_table.scss */
+  .tablerow .bullet {
+    width: 20px;
+    vertical-align: top;
+    display: inline-block; }
+  /* line 96, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_table.scss */
+  .tablerow .sparkline {
+    line-height: 0px; }
+    /* line 97, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_table.scss */
+    .tablerow .sparkline .line {
+      stroke-width: 1px; }
+    /* line 103, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_table.scss */
+    .tablerow .sparkline svg rect {
+      fill: white;
+      opacity: 0.001; }
+
+/* line 114, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_table.scss */
+.popover {
+  max-width: 350px;
+  line-height: 1.2em; }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* line 123, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_table.scss */
+  .tablerow .value {
+    width: 120px; }
+    /* line 127, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_table.scss */
+    .tablerow .value.long {
+      width: 220px; }
+    /* line 131, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_table.scss */
+    .tablerow .value.parent {
+      width: 150px; } }
+/*
+  File Overview:  Treemap styles.
+  Authors:
+    Ivan DiLernia <ivan@goinvo.com>
+    Roger Zhu <roger@goinvo.com>
+*/
+/* line 8, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_treemap.scss */
+#navigation {
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+  height: 88%;
+  width: 100%;
+  /*
+  * Zones
+  */
+  /*
+  * Labels
+  */ }
+  /* line 14, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_treemap.scss */
+  #navigation svg {
+    overflow: hidden; }
+  /* line 22, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_treemap.scss */
+  #navigation rect {
+    fill: none;
+    stroke: #fff; }
+  /* line 27, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_treemap.scss */
+  #navigation text {
+    font-size: 1.2em; }
+  /* line 31, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_treemap.scss */
+  #navigation rect.parent,
+  #navigation .grandparent rect {
+    stroke-width: 4px; }
+  /* line 36, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_treemap.scss */
+  #navigation rect.parent {
+    opacity: 0.6; }
+  /* line 40, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_treemap.scss */
+  #navigation .children:hover rect.parent,
+  #navigation .grandparent:hover rect {
+    opacity: 1.0; }
+  /* line 45, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_treemap.scss */
+  #navigation .children {
+    cursor: pointer; }
+    /* line 49, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_treemap.scss */
+    #navigation .children.no-label .titleLabel {
+      display: none; }
+    /* line 53, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_treemap.scss */
+    #navigation .children.no-label .valueLabel {
+      display: none; }
+    /* line 57, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_treemap.scss */
+    #navigation .children.no-label text {
+      display: none; }
+    /* line 63, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_treemap.scss */
+    #navigation .children.no-value .valueLabel {
+      display: none; }
+  /* line 72, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_treemap.scss */
+  #navigation .textdiv {
+    padding: 8px; }
+    /* line 75, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_treemap.scss */
+    #navigation .textdiv .titleLabel,
+    #navigation .textdiv .valueLabel {
+      overflow: hidden;
+      text-overflow: ellipsis; }
+
+/*
+* Back button
+*/
+/* line 88, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_treemap.scss */
+#zoombutton {
+  width: 120px;
+  float: right;
+  font-size: 18px; }
+  /* line 93, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_treemap.scss */
+  #zoombutton i {
+    vertical-align: top;
+    margin-right: 5px; }
+
+/* line 99, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_treemap.scss */
+.popover {
+  z-index: 2030;
+  font-size: 18px; }
+
+/*
+* IE only
+*/
+/* line 108, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_treemap.scss */
+#ie-popover {
+  z-index: 2030;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  position: absolute;
+  border-radius: 5px; }
+  /* line 115, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_treemap.scss */
+  #ie-popover .arrow {
+    z-index: 1050;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid rgba(0, 0, 0, 0.5); }
+  /* line 125, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_treemap.scss */
+  #ie-popover .text {
+    color: white;
+    padding: 5px; }
+  /* line 130, /Users/bigfleet/src/openbudget/source/stylesheets/partials/_treemap.scss */
+  #ie-popover .popover-title {
+    color: white;
+    padding: 5px; }
