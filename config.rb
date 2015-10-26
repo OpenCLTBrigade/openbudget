@@ -47,11 +47,11 @@
 #   end
 # end
 
-set :css_dir, 'openbudget/stylesheets'
+set :css_dir, '/stylesheets'
 
-set :js_dir, 'openbudget/javascripts'
+set :js_dir, '/javascripts'
 
-set :images_dir, 'openbudget/images'
+set :images_dir, '/images'
 
 # Build-specific configuration
 configure :build do
